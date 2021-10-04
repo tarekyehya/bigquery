@@ -1,0 +1,33 @@
+version: 2
+
+models:
+    - name: stg_raw_food_orders.sql
+      description: "clean raw_food_order"
+      columns:
+          - name: order_id
+            description: "order id"
+            tests:
+                - not_null
+
+          - name: customer_id
+            description: "reference to customer table"
+            tests:
+                - not_null
+
+          - name: item_name
+            description: "names of items"
+            tests:
+                - not_null
+
+          - name: item_price
+            description: "price for an item"
+            tests:
+                - not_null
+
+          - name: date
+            description: "date column"
+            tests:
+                - not_null
+            
+
+           

@@ -1,7 +1,7 @@
 version: 2
 
 models:
-    - name: stg_raw_food_orders.sql
+    - name: stg_raw_food_orders
       description: "clean raw_food_order"
       columns:
           - name: order_id
